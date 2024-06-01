@@ -1,8 +1,7 @@
 {
   "name": "connect2ic",
-  "author": "Mio Quispe",
-  "version": "0.0.3",
-  "private": true,
+  "author": "Origyn Foundation",
+  "version": "0.0.4",
   "workspaces": [
     "packages/*"
   ],
