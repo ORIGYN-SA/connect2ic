@@ -23,7 +23,7 @@ const ConnectDialog: React.FC<PropsWithChildren<Props>> = (props) => {
   const { connect, isConnected } = useConnect()
 
   useEffect(() => {
-    if (isConnected) {
+     if (isConnected) {
       dialog.close()
     }
   }, [isConnected])
@@ -62,7 +62,7 @@ const ConnectDialog: React.FC<PropsWithChildren<Props>> = (props) => {
             {providers.map((provider) => {
               return (
                 <button key={provider.meta.id} onClick={() => connect(provider.meta.id)}
-                        className={`button-styles ${provider.meta.id}-styles`} {...props}>
+                        className={`button-styles ${provider.meta.id}-styles`}>
                   <img className={"img-styles"} src={dark ? provider.meta.icon.dark : provider.meta.icon.light} />
                   <div>
                     <span className="button-label">{provider.meta.name}</span>
